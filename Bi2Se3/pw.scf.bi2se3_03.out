@@ -1,0 +1,321 @@
+
+     Program PWSCF v.6.7MaX starts on 26Apr2024 at 16:35:17 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI), running on     8 processors
+
+     MPI processes distributed on     1 nodes
+     R & G space division:  proc/nbgrp/npool/nimage =       8
+     Reading input from pw.scf.bi2se3_03.in
+
+     Current dimensions of program PWSCF are:
+     Max number of different atomic species (ntypx) = 10
+     Max number of k-points (npk) =  40000
+     Max angular momentum in pseudopotentials (lmaxx) =  3
+     Message from routine read_pp_mesh:
+     mesh size missing, using the one in header
+     Message from routine read_pp_mesh:
+     mesh size missing, using the one in header
+     Message from routine setup:
+     At least one non s.o. pseudo
+
+     Subspace diagonalization in iterative solution of the eigenvalue problem:
+     one sub-group per band group will be used
+     scalapack distributed-memory algorithm (size of sub-group:  2*  2 procs)
+
+
+     Parallelization info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Min         189     189     52                55559    55559    8010
+     Max         191     191     53                55581    55581    8047
+     Sum        1519    1519    421               444553   444553   64263
+
+
+
+     bravais-lattice index     =            4
+     lattice parameter (alat)  =       7.8197  a.u.
+     unit-cell volume          =    3850.7309 (a.u.)^3
+     number of atoms/cell      =           16
+     number of atomic types    =            2
+     number of electrons       =       250.00
+     number of Kohn-Sham states=          300
+     kinetic-energy cutoff     =      90.0000  Ry
+     charge density cutoff     =     360.0000  Ry
+     scf convergence threshold =      3.0E-03
+     mixing beta               =       0.2000
+     number of iterations used =            8  plain     mixing
+     Exchange-correlation= PBE
+                           (   1   4   3   4   0   0   0)
+     Non magnetic calculation with spin-orbit
+
+
+     celldm(1)=   7.819686  celldm(2)=   0.000000  celldm(3)=   9.299178
+     celldm(4)=   0.000000  celldm(5)=   0.000000  celldm(6)=   0.000000
+
+     crystal axes: (cart. coord. in units of alat)
+               a(1) = (   1.000000   0.000000   0.000000 )  
+               a(2) = (  -0.500000   0.866025   0.000000 )  
+               a(3) = (   0.000000   0.000000   9.299178 )  
+
+     reciprocal axes: (cart. coord. in units 2 pi/alat)
+               b(1) = (  1.000000  0.577350 -0.000000 )  
+               b(2) = (  0.000000  1.154701  0.000000 )  
+               b(3) = (  0.000000 -0.000000  0.107536 )  
+
+
+     PseudoPot. # 1 for Bi read from file:
+     ../PSEUDO/Bi.upf
+     MD5 check sum: a545f56da3ca017249ac0f4a9c12ec4f
+     Pseudo is Norm-conserving + core correction, Zval = 15.0
+     Generated using ONCVPSP code by D. R. Hamann
+     Using radial grid of 1484 points,  8 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   0
+                l(4) =   1
+                l(5) =   1
+                l(6) =   2
+                l(7) =   2
+                l(8) =   3
+
+     PseudoPot. # 2 for Se read from file:
+     ../PSEUDO/Se.upf
+     MD5 check sum: 3cc46b3642295b3f4fdae63b742ce36d
+     Pseudo is Norm-conserving + core correction, Zval = 16.0
+     Generated using ONCVPSP code by D. R. Hamann
+     Using radial grid of 1214 points,  6 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+                l(5) =   2
+                l(6) =   2
+
+     atomic species   valence    mass     pseudopotential
+        Bi            15.00   208.98040     Bi( 1.00)
+        Se            16.00    78.96000     Se( 1.00)
+
+      6 Sym. Ops. (no inversion) found
+
+
+                                    s                        frac. trans.
+
+      isym =  1     identity                                     
+
+ cryst.   s( 1) = (     1          0          0      )
+                  (     0          1          0      )
+                  (     0          0          1      )
+
+ cart.    s( 1) = (  1.0000000  0.0000000  0.0000000 )
+                  (  0.0000000  1.0000000  0.0000000 )
+                  (  0.0000000  0.0000000  1.0000000 )
+
+
+      isym =  2     120 deg rotation - cryst. axis [0,0,1]       
+
+ cryst.   s( 2) = (     0          1          0      )
+                  (    -1         -1          0      )
+                  (     0          0          1      )
+
+ cart.    s( 2) = ( -0.5000000 -0.8660254  0.0000000 )
+                  (  0.8660254 -0.5000000  0.0000000 )
+                  (  0.0000000  0.0000000  1.0000000 )
+
+
+      isym =  3     120 deg rotation - cryst. axis [0,0,-1]      
+
+ cryst.   s( 3) = (    -1         -1          0      )
+                  (     1          0          0      )
+                  (     0          0          1      )
+
+ cart.    s( 3) = ( -0.5000000  0.8660254  0.0000000 )
+                  ( -0.8660254 -0.5000000  0.0000000 )
+                  (  0.0000000  0.0000000  1.0000000 )
+
+
+      isym =  4     inv. 180 deg rotation - cart. axis [1,0,0]   
+
+ cryst.   s( 4) = (    -1          0          0      )
+                  (     1          1          0      )
+                  (     0          0          1      )
+
+ cart.    s( 4) = ( -1.0000000  0.0000000  0.0000000 )
+                  (  0.0000000  1.0000000  0.0000000 )
+                  (  0.0000000  0.0000000  1.0000000 )
+
+
+      isym =  5     inv. 180 deg rotation - cryst. axis [0,1,0]  
+
+ cryst.   s( 5) = (     1          1          0      )
+                  (     0         -1          0      )
+                  (     0          0          1      )
+
+ cart.    s( 5) = (  0.5000000  0.8660254  0.0000000 )
+                  (  0.8660254 -0.5000000  0.0000000 )
+                  (  0.0000000  0.0000000  1.0000000 )
+
+
+      isym =  6     inv. 180 deg rotation - cryst. axis [1,1,0]  
+
+ cryst.   s( 6) = (     0         -1          0      )
+                  (    -1          0          0      )
+                  (     0          0          1      )
+
+ cart.    s( 6) = (  0.5000000 -0.8660254  0.0000000 )
+                  ( -0.8660254 -0.5000000  0.0000000 )
+                  (  0.0000000  0.0000000  1.0000000 )
+
+
+     double point group C_3v (3m)  
+     there are  6 classes and  3 irreducible representations
+     the character table:
+
+       E     -E    2C3   -2C3  3s_v  -3s_v
+                                          
+G_4    2.00 -2.00  1.00 -1.00  0.00  0.00
+G_5    1.00 -1.00 -1.00  1.00  0.00  0.00
+G_6    1.00 -1.00 -1.00  1.00  0.00  0.00
+
+     imaginary part
+
+       E     -E    2C3   -2C3  3s_v  -3s_v
+                                          
+G_4    0.00  0.00  0.00  0.00  0.00  0.00
+G_5    0.00  0.00  0.00  0.00  1.00 -1.00
+G_6    0.00  0.00  0.00  0.00 -1.00  1.00
+
+     the symmetry operations in each class and the name of the first element:
+
+     E             1
+          identity                                               
+     -E           -1
+          identity E                                             
+     2C3           2    3
+          120 deg rotation - cryst. axis [0,0,1]                 
+     -2C3         -2   -3
+          120 deg rotation - cryst. axis [0,0,1] E               
+     3s_v          4   -5   -6
+          inv. 180 deg rotation - cart. axis [1,0,0]             
+     3s_v          5    6   -4
+          inv. 180 deg rotation - cryst. axis [0,1,0]            
+
+   Cartesian axes
+
+     site n.     atom                  positions (alat units)
+         1           Bi  tau(   1) = (   0.0000000   0.0000000   2.7461380  )
+         2           Bi  tau(   2) = (   0.0000000   0.0000000   4.1364138  )
+         3           Bi  tau(   3) = (   0.5000000   0.2886751   5.0403219  )
+         4           Bi  tau(   4) = (   0.5000000   0.2886751   6.4305974  )
+         5           Bi  tau(   5) = (  -0.0000000   0.5773503   0.4519541  )
+         6           Bi  tau(   6) = (  -0.0000000   0.5773503   1.8422297  )
+         7           Se  tau(   7) = (   0.0000000   0.0000000   0.0000000  )
+         8           Se  tau(   8) = (   0.0000000   0.0000000   6.8825521  )
+         9           Se  tau(   9) = (   0.5000000   0.2886751   2.2941841  )
+        10           Se  tau(  10) = (  -0.0000000   0.5773503   4.5883681  )
+        11           Se  tau(  11) = (   0.0000000   0.0000000   1.4178057  )
+        12           Se  tau(  12) = (   0.0000000   0.0000000   5.4647463  )
+        13           Se  tau(  13) = (   0.5000000   0.2886751   3.7119897  )
+        14           Se  tau(  14) = (   0.5000000   0.2886751   0.8763783  )
+        15           Se  tau(  15) = (  -0.0000000   0.5773503   6.0061736  )
+        16           Se  tau(  16) = (  -0.0000000   0.5773503   3.1705621  )
+
+   Crystallographic axes
+
+     site n.     atom                  positions (cryst. coord.)
+         1           Bi  tau(   1) = (  0.0000000  0.0000000  0.2953098  )
+         2           Bi  tau(   2) = (  0.0000000  0.0000000  0.4448150  )
+         3           Bi  tau(   3) = (  0.6666667  0.3333333  0.5420180  )
+         4           Bi  tau(   4) = (  0.6666667  0.3333333  0.6915232  )
+         5           Bi  tau(   5) = (  0.3333333  0.6666667  0.0486015  )
+         6           Bi  tau(   6) = (  0.3333333  0.6666667  0.1981067  )
+         7           Se  tau(   7) = (  0.0000000  0.0000000  0.0000000  )
+         8           Se  tau(   8) = (  0.0000000  0.0000000  0.7401248  )
+         9           Se  tau(   9) = (  0.6666667  0.3333333  0.2467083  )
+        10           Se  tau(  10) = (  0.3333333  0.6666667  0.4934165  )
+        11           Se  tau(  11) = (  0.0000000  0.0000000  0.1524657  )
+        12           Se  tau(  12) = (  0.0000000  0.0000000  0.5876591  )
+        13           Se  tau(  13) = (  0.6666667  0.3333333  0.3991739  )
+        14           Se  tau(  14) = (  0.6666667  0.3333333  0.0942425  )
+        15           Se  tau(  15) = (  0.3333333  0.6666667  0.6458822  )
+        16           Se  tau(  16) = (  0.3333333  0.6666667  0.3409508  )
+
+     number of k points=     8  Marzari-Vanderbilt smearing, width (Ry)=  0.0073
+                       cart. coord. in units 2pi/alat
+        k(    1) = (   0.0000000   0.0000000   0.0000000), wk =   0.0312500
+        k(    2) = (   0.0000000   0.0000000  -0.0537682), wk =   0.0312500
+        k(    3) = (   0.0000000   0.2886751   0.0000000), wk =   0.1875000
+        k(    4) = (   0.0000000   0.2886751  -0.0537682), wk =   0.1875000
+        k(    5) = (   0.0000000  -0.5773503   0.0000000), wk =   0.0937500
+        k(    6) = (   0.0000000  -0.5773503  -0.0537682), wk =   0.0937500
+        k(    7) = (   0.2500000   0.4330127   0.0000000), wk =   0.1875000
+        k(    8) = (   0.2500000   0.4330127  -0.0537682), wk =   0.1875000
+
+                       cryst. coord.
+        k(    1) = (   0.0000000   0.0000000   0.0000000), wk =   0.0312500
+        k(    2) = (   0.0000000   0.0000000  -0.5000000), wk =   0.0312500
+        k(    3) = (   0.0000000   0.2500000   0.0000000), wk =   0.1875000
+        k(    4) = (   0.0000000   0.2500000  -0.5000000), wk =   0.1875000
+        k(    5) = (   0.0000000  -0.5000000   0.0000000), wk =   0.0937500
+        k(    6) = (   0.0000000  -0.5000000  -0.5000000), wk =   0.0937500
+        k(    7) = (   0.2500000   0.2500000   0.0000000), wk =   0.1875000
+        k(    8) = (   0.2500000   0.2500000  -0.5000000), wk =   0.1875000
+
+     Dense  grid:   444553 G-vectors     FFT dimensions: (  48,  48, 450)
+
+     Dynamical RAM for                 wfc:      63.54 MB
+
+     Dynamical RAM for     wfc (w. buffer):     571.84 MB
+
+     Dynamical RAM for           str. fact:       1.70 MB
+
+     Dynamical RAM for           local pot:       0.00 MB
+
+     Dynamical RAM for          nlocal pot:      35.58 MB
+
+     Dynamical RAM for                qrad:       7.31 MB
+
+     Dynamical RAM for          rho,v,vnew:      22.20 MB
+
+     Dynamical RAM for               rhoin:       7.40 MB
+
+     Dynamical RAM for            rho*nmix:      54.27 MB
+
+     Dynamical RAM for           G-vectors:       3.60 MB
+
+     Dynamical RAM for          h,s,v(r/c):       4.12 MB
+
+     Dynamical RAM for          <psi|beta>:       3.08 MB
+
+     Dynamical RAM for                 psi:     127.08 MB
+
+     Dynamical RAM for                hpsi:     127.08 MB
+
+     Dynamical RAM for      wfcinit/wfcrot:      97.37 MB
+
+     Estimated static dynamical RAM per process >     714.45 MB
+
+     Estimated max dynamical RAM per process >     975.80 MB
+
+     Estimated total dynamical RAM >       7.62 GB
+
+     Initial potential from superposition of free atoms
+
+     starting charge  249.99420, renormalised to  250.00000
+
+     negative rho (up, down):  4.292E-07 0.000E+00
+     Starting wfcs are  288 randomized atomic wfcs +   12 random wfcs
+
+     total cpu time spent up to now is      450.9 secs
+
+     Self-consistent Calculation
+
+     iteration #  1     ecut=    90.00 Ry     beta= 0.20
+     Davidson diagonalization with overlap
