@@ -2,5 +2,4 @@
 /**/tmp/ 
 # important to exclude temp, too big!
 
-bands.*
-graphene.*
+

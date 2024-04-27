@@ -1,0 +1,6 @@
+&BANDS
+prefix = 'VLAB',
+outdir = './tmp',
+filband = 'graphene.bands.dat',
+lsym = .true.
+&end
