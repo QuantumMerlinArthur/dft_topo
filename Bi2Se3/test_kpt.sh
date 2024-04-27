@@ -16,11 +16,11 @@ echo -e "k\tetot" > "$datfile" # header
 
 
 # loop through ecut values
-for k in 4 6 8
+for k in 6 8 10 12
 do
 sed -i "/K_POINTS/ {n; s/.*/    $k $k 2 0 0 0/}" "$infile" 
 
-mpirun -np 8 pw.x -inp $infile > $outfile
+mpirun -np 8 pw.x -i $infile > $outfile
 etot=$(grep "total energy" $outfile | tail -2 | head -1 | awk '{split($0,a," "); print a[5]}') 
 echo -e "$k\t$etot"
 echo -e "$k\t$etot" >> $datfile
