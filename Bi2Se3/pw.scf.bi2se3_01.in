@@ -10,7 +10,7 @@
 
 &SYSTEM
   degauss =   7.3498618000d-03
-  ecutwfc = 40
+  ecutwfc = 60
   ibrav = 4
   celldm(1) = 7.819686140739584
   celldm(3) = 6.882551957467376 
